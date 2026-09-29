@@ -3,36 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NR Group of Companies</title>
-<meta name="description" content="NR Group of Companies — a growing business group across services, technology, travel and road assistance.">
+<title>NR Group of Companies | Building Businesses. Creating Value.</title>
+<meta name="description" content="NR Group of Companies — diversified businesses across Roadside Assistance, Travel & Tourism, Business Technology, Digital Services and Automotive Services.">
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#10233f;background:#fff}a{text-decoration:none;color:inherit}
-.top{padding:10px 6%;background:#0d3b78;color:#fff;text-align:center;font-size:14px}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 6%;border-bottom:1px solid #e8edf5;background:#fff;position:sticky;top:0;z-index:10}
-.brand{font-size:24px;font-weight:800;color:#0d3b78}.links{display:flex;gap:28px;font-weight:600}
-.hero{padding:80px 6%;background:linear-gradient(135deg,#eef6ff,#fff);display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
-.hero h1{font-size:58px;line-height:1.05;margin:10px 0 20px}.hero p{font-size:19px;line-height:1.7;color:#50617a}
-.btn{display:inline-block;padding:14px 24px;border-radius:8px;background:#0d3b78;color:#fff;font-weight:700;margin-right:10px}.btn.alt{background:#e8f1ff;color:#0d3b78}
-.card{background:#fff;border-radius:20px;padding:50px;text-align:center;box-shadow:0 15px 45px rgba(13,59,120,.12)}.logo{font-size:64px;font-weight:900;color:#0d3b78}
-.section{padding:70px 6%}.section h2{text-align:center;font-size:36px;margin-bottom:35px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.box{padding:28px;border:1px solid #e4eaf2;border-radius:14px;background:#fff}.box h3{margin-top:0;color:#0d3b78}.box p{line-height:1.6;color:#5a687b}
-.contact{background:#0d3b78;color:#fff}.contact p{color:#dce9fa}.footer{padding:22px 6%;background:#082c5c;color:#dce9fa;text-align:center;font-size:14px}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:42px}.grid{grid-template-columns:1fr}.links{gap:12px;font-size:14px}}
+:root{--navy:#071b49;--blue:#0d3b78;--gold:#caa24d;--ink:#12213a;--muted:#61708a;--light:#f7f8fb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}a{text-decoration:none;color:inherit}
+.top{padding:10px 6%;background:var(--navy);color:#fff;text-align:center;font-size:13px;letter-spacing:.5px}
+.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px 6%;background:rgba(255,255,255,.97);border-bottom:1px solid #e8eaf0}
+.brand{font-size:25px;font-weight:900;letter-spacing:.7px;color:var(--navy)}.links{display:flex;gap:30px;font-weight:700;font-size:14px}.links a:hover{color:var(--gold)}
+.hero{padding:105px 6%;background:linear-gradient(135deg,#fff,#f2f5fa);display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.eyebrow{color:var(--gold);font-size:13px;font-weight:900;letter-spacing:2.5px}.hero h1{font-family:Georgia,serif;font-size:clamp(48px,6vw,78px);line-height:1.02;margin:15px 0 22px;color:var(--navy)}.hero h1 span{color:var(--blue)}.hero p{font-size:19px;line-height:1.8;color:var(--muted);max-width:720px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 23px;border-radius:6px;font-weight:800}.primary{background:var(--navy);color:#fff}.secondary{border:1px solid #d4dbe6;background:#fff;color:var(--navy)}.gold{background:var(--gold);color:#fff}
+.hero-card{background:linear-gradient(145deg,#071b49,#102f63);color:#fff;border-radius:24px;padding:48px;min-height:330px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 25px 70px #071b4930}.hero-card .nr{font-size:76px;font-weight:900;color:var(--gold);letter-spacing:3px}.hero-card h2{font-family:Georgia,serif;font-size:30px;margin:4px 0 16px}.hero-card p{color:#dce5f5;font-size:16px}
+.section{padding:85px 6%;max-width:1250px;margin:auto}.section h2{text-align:center;font-family:Georgia,serif;color:var(--navy);font-size:42px;margin:0 0 14px}.sub{text-align:center;color:var(--muted);margin:0 auto 42px;max-width:820px;line-height:1.7}
+.about-box{max-width:1000px;margin:auto}.about-box p{font-size:17px;line-height:1.9;color:#4f5e75}.about-box strong{color:var(--navy)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.info-card{padding:32px;border:1px solid #e5e8ee;border-radius:18px;background:#fff;box-shadow:0 10px 35px #1428500a}.info-card h3{color:var(--navy);font-family:Georgia,serif;font-size:24px}.info-card p{color:var(--muted);line-height:1.75}
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}.value{padding:22px;border-radius:14px;background:#f8f9fb;text-align:center;font-weight:800;color:var(--navy);border:1px solid #eceef3}
+.founder{background:linear-gradient(135deg,#f6f7fa,#fff);max-width:none}.founder-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center;max-width:1050px;margin:auto}.founder-photo{min-height:430px;border-radius:24px;background:linear-gradient(145deg,#0a204d,#182f57);display:flex;align-items:center;justify-content:center;box-shadow:0 22px 60px #071b4925}.founder-fallback{font-size:90px;font-weight:900;color:var(--gold)}.founder-text .eyebrow{color:var(--gold)}.founder-text h2{text-align:left;margin-top:8px}.founder-name{font-size:30px;font-weight:900;color:var(--navy);margin:20px 0 6px}.founder-title{color:var(--gold);font-weight:800;letter-spacing:1px}.founder-text p{color:var(--muted);line-height:1.8}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.business{padding:32px;border:1px solid #e5e8ee;border-radius:18px;background:#fff;box-shadow:0 10px 35px #1428500a}.business .brandname{font-size:27px;font-weight:900;color:var(--blue)}.business h3{font-family:Georgia,serif;font-size:23px;color:var(--navy)}.business p{line-height:1.7;color:var(--muted)}.business .btn{margin-top:10px}
+.careers{background:var(--navy);color:#fff;max-width:none}.careers h2{color:#fff}.careers .sub{color:#cdd8ea}.career-box{max-width:950px;margin:auto;padding:38px;border:1px solid #49638d;border-radius:22px;background:#102c60;text-align:center}.career-box h3{font-size:24px}.career-box p{color:#dce5f5;line-height:1.7}.career-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.contact{background:#f7f8fb}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-card{padding:30px;border-radius:18px;background:#fff;border:1px solid #e5e8ee}.contact-card p{line-height:1.8;color:var(--muted)}.contact-card a{color:var(--blue);font-weight:800}
+.footer{background:#041331;color:#cbd6ef;text-align:center;padding:30px 6%;line-height:1.8}.footer strong{color:#fff}
+@media(max-width:850px){.links{gap:14px;font-size:13px}.hero,.founder-wrap,.two-col,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.values{grid-template-columns:1fr 1fr}.founder-photo{min-height:360px}.section{padding:65px 5%}.hero{padding-top:70px}.hero-card{padding:35px}}
 </style>
 </head>
 <body>
-<div class="top">Our Values • Our Services • Our Community • Our Growth</div>
-<nav class="nav"><a class="brand" href="/">NR GROUP</a><div class="links"><a href="#about">About</a><a href="#businesses">Businesses</a><a href="#careers">Careers</a><a href="#contact">Contact</a></div></nav>
-<section class="hero"><div><div class="top" style="display:inline-block;border-radius:30px;padding:8px 14px">NR GROUP OF COMPANIES</div><h1>From Trust to Growth.</h1><p>NR Group of Companies — a growing business group across services, technology, travel and road assistance.</p><a class="btn" href="#businesses">Our Businesses</a><a class="btn alt" href="#contact">Contact Us</a></div>
-<div class="card"><a href="/" aria-label="Go to home"><div class="logo">NR</div></a><h3>NR Group of Companies</h3><p>Building trusted services and opportunities for our community.</p></div></section>
-<section class="section" id="about"><h2>About NR Group</h2><div class="box"><p>NR Group of Companies brings together multiple business initiatives focused on practical services, technology, travel, mobility and customer support. Our goal is to build trusted brands and create long-term value.</p></div></section>
-<section class="section" id="businesses"><h2>Our Businesses</h2><div class="grid">
-<div class="box"><h3>NRORA</h3><p>Road assistance and roadside support services.</p><a href="https://nrroadcare.in" class="btn">Visit Website</a></div>
-<div class="box"><h3>NR BIZPRO</h3><p>Billing and business software solutions for local businesses.</p><a href="https://nrbizpro.in" class="btn">Visit Website</a></div>
-<div class="box"><h3>NR Travels</h3><p>Travel services and booking support for customers and partners.</p><a href="https://nrtravels.in" class="btn">Visit Website</a></div>
+<div class="top">OUR VALUES • OUR SERVICES • OUR COMMUNITY • OUR GROWTH</div>
+<nav class="nav"><a class="brand" href="/">NR GROUP OF COMPANIES</a><div class="links"><a href="#about">About</a><a href="#businesses">Businesses</a><a href="#founder">Founder</a><a href="#careers">Careers</a><a href="#contact">Contact</a></div></nav>
+<section class="hero"><div><div class="eyebrow">NR GROUP OF COMPANIES</div><h1>From Trust to <span>Growth.</span></h1><p>A diversified business group focused on building reliable, customer-centric businesses across multiple sectors.</p><div class="buttons"><a class="btn primary" href="#businesses">Explore Our Businesses</a><a class="btn secondary" href="#contact">Contact Us</a></div></div><div class="hero-card"><div class="nr">NR</div><h2>GROUP OF COMPANIES</h2><p>Building Businesses. Creating Value. Growing Together.</p></div></section>
+
+<section class="section" id="about"><h2>About Us</h2><p class="sub">Entrepreneurship, innovation, technology, quality and long-term customer relationships.</p><div class="about-box">
+<p><strong>NR Group of Companies</strong> is a diversified business group focused on building reliable, customer-centric businesses across multiple sectors.</p>
+<p>Our journey is driven by <strong>entrepreneurship, innovation, technology, quality and long-term customer relationships.</strong> We aim to create and develop businesses that provide practical solutions, generate value for customers, and contribute to sustainable growth.</p>
+<p>Under the NR Group umbrella, we are building a portfolio of businesses and services across areas such as <strong>Roadside Assistance, Travel & Tourism, Business Technology, Digital Services, Automotive Services and other emerging business opportunities.</strong></p>
+<p>We believe every successful business starts with a simple idea — identify a need, create a useful solution, and serve customers with commitment.</p></div>
+<div class="two-col"><div class="info-card"><h3>Our Vision</h3><p>To build NR Group into a trusted and diversified business group with a strong presence across multiple industries.</p></div><div class="info-card"><h3>Our Mission</h3><p>To create customer-focused businesses powered by <strong>quality, technology, innovation and responsible business practices</strong>, while continuously exploring new opportunities for growth.</p></div></div>
+<div class="info-card" style="margin-top:24px"><h3>Our Values</h3><div class="values"><div class="value">Customer First</div><div class="value">Trust & Transparency</div><div class="value">Quality & Reliability</div><div class="value">Innovation</div><div class="value">Technology</div><div class="value">Continuous Growth</div><div class="value">Responsible Business</div></div></div></section>
+
+<section class="section founder" id="founder"><div class="founder-wrap"><div class="founder-photo"><div class="founder-fallback">NR</div></div><div class="founder-text"><div class="eyebrow">VISIONARY FOUNDER</div><h2>Leadership with Purpose.</h2><div class="founder-name">Maskuri Ravindhar</div><div class="founder-title">FOUNDER & VISIONARY — NR GROUP OF COMPANIES</div><p>The NR Group is being built with a long-term vision to create practical, customer-focused businesses powered by technology, innovation and responsible growth.</p><p>With an entrepreneurial approach and a focus on creating useful solutions, the Group continues to explore new opportunities across multiple sectors.</p></div></div></section>
+
+<section class="section" id="businesses"><h2>Our Businesses</h2><p class="sub">A growing portfolio of businesses and services under the NR Group umbrella.</p><div class="grid">
+<div class="business"><div class="brandname">NRORA</div><h3>Roadside Assistance</h3><p>Roadside support, vehicle towing, on-spot mechanical repair, flat tyre replacement, battery jump start and key lockout assistance.</p><a class="btn primary" href="https://nrroadcare.in">Visit Website</a></div>
+<div class="business"><div class="brandname">NR BIZPRO</div><h3>Business Technology</h3><p>Billing, invoicing and practical software solutions designed for local and growing businesses.</p><a class="btn primary" href="https://nrbizpro.in">Visit Website</a></div>
+<div class="business"><div class="brandname">NR TRAVELS</div><h3>Travel & Tourism</h3><p>Travel services and booking support across flights, hotels, holidays and other travel requirements.</p><a class="btn primary" href="https://nrtravels.in">Visit Website</a></div>
 </div></section>
-<section class="section" id="careers"><h2>Careers</h2><div class="box"><h3>Join NR Group</h3><p>We welcome people interested in office, customer support, sales, travel and technology roles. Send your resume and contact details to our team.</p><a class="btn" href="mailto:info@nrgroupofcompanies.in?subject=Career%20Application">Send Resume</a></div></section>
-<section class="section contact" id="contact"><h2>Contact Us</h2><div class="box" style="background:transparent;border-color:#ffffff55;color:#fff"><p>NR Group of Companies</p><p>Email: <a href="mailto:info@nrgroupofcompanies.in">info@nrgroupofcompanies.in</a></p><p>Phone / WhatsApp: <a href="tel:+919160264439">9160264439</a></p><p>Website: nrgroupofcompanies.in</p></div></section>
-<footer class="footer">© 2026 NR Group of Companies. All rights reserved.</footer>
+
+<section class="section careers" id="careers"><h2>Careers at NR Group</h2><p class="sub">Join our growing team across office, customer support, sales, travel and technology roles.</p><div class="career-box"><h3>WE ARE HIRING</h3><p>Send your resume directly to our recruitment email or contact our team on WhatsApp.</p><div class="career-actions"><a class="btn gold" href="mailto:info@nrgroupofcompanies.in?subject=Career%20Application&body=Name:%0APhone:%0APosition%20Applied%20For:%0A">✉ Send Resume — info@nrgroupofcompanies.in</a><a class="btn secondary" href="https://wa.me/919160264439?text=Hello%20NR%20Group%2C%20I%20would%20like%20to%20apply%20for%20a%20career%20opportunity.%20I%20will%20share%20my%20resume.">WhatsApp — 9160264439</a></div></div></section>
+
+<section class="section contact" id="contact"><h2>Contact Us</h2><p class="sub">Connect with NR Group of Companies.</p><div class="contact-grid"><div class="contact-card"><h3>NR Group of Companies</h3><p>Email: <a href="mailto:info@nrgroupofcompanies.in">info@nrgroupofcompanies.in</a></p><p>Phone / WhatsApp: <a href="https://wa.me/919160264439">9160264439</a></p><p>Website: <strong>nrgroupofcompanies.in</strong></p></div><div class="contact-card"><h3>Our Businesses</h3><p>NRORA — nrroadcare.in</p><p>NR BIZPRO — nrbizpro.in</p><p>NR Travels — nrtravels.in</p></div></div></section>
+
+<footer class="footer"><strong>NR GROUP OF COMPANIES</strong><br>Building Businesses. Creating Value. Growing Together.<br>© 2026 NR Group of Companies. All rights reserved.</footer>
 </body>
 </html>
